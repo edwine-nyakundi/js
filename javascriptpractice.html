@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript practice</title>
+    <script>
+        //js in the head section of an html document
+        function myFunction(){
+            document.getElementById("demo").innerHTML="i have been changed by a fucntion";
+        }
+    </script>
+</head>
+<body>
+   <h1> home page</h1> 
+   <p id="demo">javascript practice tutorial codes by edwine</p>
+   <button type="button"onclick="myFunction()">CLICK</button>
+   <p id="demo2">demonstrating js when placed in the body</p>
+   <button type="button"onclick="bodyJs()">JSBODYCHANGE</button>
+<script>
+    //js now in the body
+    function bodyJs(){
+        document.getElementById("demo2").innerHTML="i have been changed by js in the body";
+    }
+</script>
+</body>
+</html>
